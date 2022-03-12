@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - print number pair from 00-99, no repeat
- *
+ *main - print a num pair from 00-99 but no repeats (00 01, 00 02, 00 03,...)
  *Return: Always 0 (Success)
  */
 
@@ -15,11 +14,11 @@ int main(void)
 
 	for (tens = '0'; tens <= '9'; tens++) /*print first two digit combo*/
 	{
-		for (ones = 'o'; ones <= '9'; ones++)
+		for (ones = '0'; ones <= '9'; ones++)
 		{
-			for (t = tens; t <= '9'; t++) /*second pair*/
+			for (t = tens; t <= '9'; t++) /*print second of pair*/
 			{
-				for (o = ones + 1; 0 <= '9'; o++)
+				for (o = ones + 1; o <= '9'; o++)
 				{
 					putchar(tens);
 					putchar(ones);
