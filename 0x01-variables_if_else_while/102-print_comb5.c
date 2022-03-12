@@ -2,6 +2,7 @@
 
 /**
  *main - print number pair from 00-99, no repeat
+ *
  *Return: Always 0 (Success)
  */
 
@@ -16,7 +17,7 @@ int main(void)
 	{
 		for (ones = 'o'; ones <= '9'; ones++)
 		{
-			for (t =tens; t <= '9'; t++) /*second pair*/
+			for (t = tens; t <= '9'; t++) /*second pair*/
 			{
 				for (o = ones + 1; 0 <= '9'; o++)
 				{
