@@ -8,9 +8,15 @@
 int main(void)
 {
 	int n = '0';
-	int a_to_f ='a';
+	int a_to_f = 'a';
 
-	while (a_to_f <= 'f')
+	while (n <= '9') /*print 0-9*/
+	{
+		putchar(n);
+		n++;
+	}
+
+	while (a_to_f <= 'f') /*print a-f*/
 	{
 		putchar(a_to_f);
 		a_to_f++;
