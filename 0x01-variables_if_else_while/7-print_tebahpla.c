@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - print alphabets in reversed order
+ *main - print alphabet reversed using putchar
  *Return: Always 0 (Success)
  */
 
@@ -14,7 +14,7 @@ int main(void)
 		putchar(alpha);
 		alpha--;
 	}
-	putchar('\n);
+	putchar('\n');
 
 	return (0);
 }
